@@ -4,7 +4,7 @@ const showLogin = () => {
     <h1>Login Form</h1>
     <p><input type="text" id="txtEmail"></p>
     <p><input type="password" id="txtPass"></p>
-    <p><button class="button1">Log In</button></p>
+    <p><button class="button1" onclick='showWelcome()'>Log In</button></p>
     <p><button class="button3" onclick='showRegister()'>Create Account</button></p>
     </div>
     `
@@ -23,4 +23,13 @@ const showRegister = () => {
     </div>
     `
     root.innerHTML = str
+}
+const showWelcome = () => {
+    let str=`
+    <div class='Welcome-container'>
+    <h2> welcome!</h2>
+    </div>
+    `
+    root.innerHTML = str
+
 }

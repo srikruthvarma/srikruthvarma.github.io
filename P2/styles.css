@@ -26,3 +26,10 @@
 .button4 {
     background-color: aquamarine;
 }
+.Welcome-container {
+    text-align:center;
+    padding: 10px;
+    border: 1px solid gray;
+    width: 200px;
+    border-radius: 10px;
+}
