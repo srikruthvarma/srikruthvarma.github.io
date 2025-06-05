@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
     <script>
-    function greet(){
+      function greet() {
         alert(txtName.value);
-    }
-    function calc(){
-        let a = Number(t1.value)
-        let b = Number(t2.value)
-        //alert(a+b); //This will give a pop up 
-        dvResult.innerHTML = a+b;
-    }
-  </script>
-  <input type = "name" id = "txtName">
-    <button onclick = "greet()">Submit</button>
-     <br>
-    <input type = "text" id = "t1">
-    <input type = "text" id = "t2">
-    
-    <button onclick = "calc()" style = "background-color:hotpink;">Click</button>
-  <div id="dvResult"></div>
-</body>
+      }
+      function calc() {
+        let a = Number(t1.value);
+        let b = Number(t2.value);
+        //alert(a+b)
+        dvResult.innerHTML = a + b;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="txtName" />
+    <button onclick="greet()" style="background-color: yellow">Click</button>
+    <hr />
+    <input type="text" id="t1" />
+    <input type="text" id="t2" />
+    <button onclick="calc()">Submit</button>
+    <hr />
+    <div id="dvResult"></div>
+  </body>
 </html>
