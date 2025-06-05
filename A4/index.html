@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <script>
+    function add(a, b) {
+      return a + b;
+    }
+
+    function subtract(a, b) {
+      return a - b;
+    }
+
+    function multiply(a, b) {
+      return a * b;
+    }
+
+    function divide(a, b) {
+      if (b === 0) {
+        return "Cannot divide by zero";
+      }
+      return (a / b).toFixed(2);
+    }
+
+    function calc() {
+      var num1 = Number(document.getElementById("input1").value);
+      var num2 = Number(document.getElementById("input2").value);
+      var resultDiv = document.getElementById("result");
+
+      if (isNaN(num1) || isNaN(num2)) {
+        resultDiv.innerHTML = "Please enter valid numbers.";
+        return;
+      }
+
+      var sum = add(num1, num2);
+      var diff = subtract(num1, num2);
+      var prod = multiply(num1, num2);
+      var quot = divide(num1, num2);
+
+      resultDiv.innerHTML = 
+        "Sum: " + sum + "<br>" +
+        "Difference: " + diff + "<br>" +
+        "Product: " + prod + "<br>" +
+        "Quotient: " + quot;
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Objectives</h2>
+  <ul>
+    <li>Take input of two numbers</li>
+    <li>When clicked button, it should call calc()</li>
+    <li>calc function will call add, subtract, multiply, divide</li>
+  </ul>
+
+  <input type="number" id="input1" placeholder="Enter first number" />
+  <input type="number" id="input2" placeholder="Enter second number" />
+  <button onclick="calc()" style="background-color: yellow;">Calc</button>
+
+  <hr />
+  <div id="result"></div>
+
+</body>
+</html>
