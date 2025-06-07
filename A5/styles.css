@@ -4,32 +4,4 @@
     border: 1px solid gray;
     border-radius: 10px;
     width: 500px;
-    box-shadow: 10px 10px 15px gray;
-}
-.button2 {
-    background-color: rgb(107, 201, 232);
-}
-.button1 {
-    background-color: rgb(200, 240, 136);
-}
-.button3 {
-    background-color: rgb(98, 217, 231);
-}
-.register-container {
-    text-align:center;
-    box-shadow: 10px 10px 15px gray;
-    padding: 10px;
-    width: 500px;
-    border-radius: 10px;
-    
-}
-.button4 {
-    background-color: aquamarine;
-}
-.Welcome-container {
-    text-align:center;
-    padding: 10px;
-    border: 1px solid gray;
-    width: 200px;
-    border-radius: 10px;
 }
