@@ -1,7 +1,40 @@
-.App-Container{
+.App-Container {
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid gray;
     border-radius: 10px;
     width: 500px;
+    background-color: white;
+    text-align: center;
+}
+
+
+.menu-bar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 10px 15px gray;
+}
+
+.menu-bar a {
+    color: aliceblue;
+    margin: 0 20px;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+.menu-bar a:hover {
+    color: yellow;
+}
+
+
+input[type="text"], input[type="password"] {
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
